@@ -9,14 +9,8 @@
     "install":"npm install-server && npm install-client",
     "server":"npm run start --prefix server" ,
     "client":"npm start --prefix client" ,
-    "watch": "concurrently \"npm run server\" \"npm run client\"",
-<<<<<<< HEAD
     "deploy":"npm run build --prefix client && npm run start --prefix server",
     "cluster":"npm run cluster --prefix server"
-=======
-    "test": "npm run test --prefix client && npm run test --prefix server",
-    "deploy":"npm run build --prefix client && npm run start --prefix server"
->>>>>>> c8638821ba21b26abbed8efe5e3663ea89acd3c5
   },
   "author": "",
   "license": "ISC"
