@@ -1,9 +1,10 @@
+require("dotenv").config();
 const http=require("http");
 const app=require("./app");
 const {loadPlanetsData}=require("./models/planets");
-
 const mongoose=require("mongoose");
-const MONGO_URL="mongodb+srv://bary98:Roundaround%401@nasa-project.ef5ta.mongodb.net/Nasa?retryWrites=true&w=majority" ;
+const MONGO_URL="mongodb+srv://"+process.env.NAME+":"+process.env.KEY+"@nasa-project.ef5ta.mongodb.net/Nasa?retryWrites=true&w=majority" ;
+console.log(MONGO_URL);
 const PORT=process.env.PORT||8000;
 
 const server=http.createServer(app);
