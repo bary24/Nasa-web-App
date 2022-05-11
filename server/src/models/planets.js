@@ -35,6 +35,8 @@ return new Promise((resolve,reject)=>{
 
  async function  getAllPlanets(){
     const planets =await planetsModel.find({
+    },{
+        "__v":0,"_id":0
     });
     return planets;
 }
